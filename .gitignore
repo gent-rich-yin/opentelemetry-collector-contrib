@@ -9,7 +9,7 @@ vendor/
 *.iml
 
 # VS Code
-.vscode
+#.vscode
 *.code-workspace
 
 # Cursor
