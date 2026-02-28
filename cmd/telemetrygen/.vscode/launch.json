@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "trace",
+            "name": "traces",
             "type": "go",
             "request": "launch",
             "mode": "auto",
@@ -15,6 +15,30 @@
                 "traces",
                 "--otlp-insecure", "--traces", "3"
             ]
-        }
+        },
+        {
+            "name": "metrics",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "metrics",
+                "--otlp-insecure", "--duration", "3s"
+            ]
+        },
+        {
+            "name": "logs",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "logs",
+                "--otlp-insecure", "--duration", "3s"
+            ]
+        },
     ]
 }
